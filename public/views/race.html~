@@ -1,6 +1,5 @@
 <div class="jumbotron text-center">
-  <h2>Races</h2>
-  create view for race landing page
+  <h1>Races</h1>
 
   <p>{{ tagline }}</p>
 </div>

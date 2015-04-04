@@ -9,6 +9,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 	.when('/races', {
 	    templateUrl: 'views/race.html',
 	    controller: 'RaceController'
+	})
+	.when('/contact', {
+	    templateUrl: 'views/contact.html',
+	    controller: 'MainController'
 	});
 
     $locationProvider.html5Mode(true);
