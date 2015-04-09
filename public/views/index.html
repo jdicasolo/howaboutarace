@@ -16,12 +16,14 @@
       <link rel="stylesheet" href="css/skel.css" />
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/style-desktop.css" />
+      <link rel="stylesheet" href="libs/release/ui-grid-unstable.css" />
     </noscript>
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 
     <!-- JS -->
     <script src="libs/angular/angular.min.js"></script>
     <script src="libs/angular-route/angular-route.min.js"></script>
+    <script src="libs/release/ui-grid-unstable.js" ></script>    
 
     <!-- ANGULAR CUSTOM -->
     <script src="js/controllers/MainCtrl.js"></script>
@@ -32,10 +34,10 @@
 
     <base href="/" >
   </head>
-  <body class="homepage"  ng-app="howaboutarace" ng-controller="RaceController">	
+  <body class="homepage" ng-app="howaboutarace" ng-controller="RaceController">	
     <!-- Header -->
-	  <div id="header-wrapper">
-	    <div id="header" class="container">
+    <div id="header-wrapper">
+      <div id="header" class="container">
 					
 	<!-- Logo -->
 	<h1 id="logo"><a href="/">How About a Race?</a></h1>
@@ -48,7 +50,7 @@
 	  <ul>
 	    <li><a class="icon fa-home" href="/"><span>home</span></a></li>
 	    <li>
-	      <a href="/races" class="icon fa-bar-chart-o"><span>races</span></a>
+	      <a href="/races" class="icon fa-search"><span>find</span></a>
 	      <ul>
 		<li><a href="#">swim</a></li> 
 		<li><a href="#">bike</a></li>
@@ -63,7 +65,8 @@
 		</li>
 	      </ul>
 	    </li>
-	    <li><a class="icon fa-home" href="/contact"><span>contact</span></a></li>
+	    <li><a class="icon fa-phone" href="/contact"><span>contact</span></a></li>
+	    <li><a class="icon fa-user" href="/account"><span>account</span><a></li>
 	  </ul>
 	</nav>
 	    </div>
@@ -71,7 +74,7 @@
 	  
 	    <div id="copyright" class="container">
 	      <ul class="links">
-		<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		<li>&copy; 2015</li><li>castostraphy consulting</a></li>
 	      </ul>
 	    </div>
 	  </div>
