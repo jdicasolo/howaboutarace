@@ -1,6 +1,16 @@
 angular.module('RaceCtrl', ['ui.grid']).controller('RaceController', function($scope) {
 
-    $scope.myData = [
+	$scope.gridOptions = {
+		enableFiltering: true,
+		columnDefs: [
+			{field: 'name'},
+			{field: 'sport'},
+			{field: 'location'},
+			{field: 'date'}
+		]
+	}
+
+    $scope.gridOptions.data = [
 	{"name": "red moshannon", "sport": "wildwater", "location": "moshannon, pa", "date": "3/28/2015"},
 	{"name": "elk river", "sport": "wildwater", "location": "elk, wv", "date": "4/28/2015"},
 	{"name": "some bike race", "sport": "mountain bike", "location": "somewhere, pa", "date": "4/28/2015"},
