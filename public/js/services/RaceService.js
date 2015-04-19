@@ -1,4 +1,5 @@
-angular.module('RaceService', []).factory('Race', ['$http', function($http) {
+angular.module('RaceService', [])
+	.factory('Races', ['$http', function($http) {
     return {
 
 		get : function() {
