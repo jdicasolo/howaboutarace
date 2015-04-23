@@ -8,13 +8,14 @@ var mongoose = require('mongoose');
 // configuration ===========================================
     
 // config files
-var db = require('./config/db');
+//var db = require('./config/db');
+var db = process.env.MONGOLAB_URI || 'mongodb://localhost/howaboutarace';
 
 // set our port
 var port = process.env.PORT || 8080; 
 
-// connect to our mongoDB database 
-mongoose.connect(db.url);
+// connect to our mongoDB database
+mongoose.connect(db);
 
 // get all data/stuff of the body (POST) parameters
 // parse application/json 
