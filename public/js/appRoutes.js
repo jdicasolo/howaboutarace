@@ -5,7 +5,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 	    templateUrl: 'views/home.html',
 	    controller: 'MainController'
 	})
-
 	.when('/races', {
 	    templateUrl: 'views/race.html',
 	    controller: 'RaceController'
@@ -13,6 +12,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 	.when('/contact', {
 	    templateUrl: 'views/contact.html',
 	    controller: 'MainController'
+	})
+	.when('/account', {
+		templateUrl: 'views/account.html',
+		controller: 'MainController'
 	});
 
     $locationProvider.html5Mode(true);
